@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mon Groom</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="loader">
+        <img src="img/logo-big.svg" alt="loader">
+    </div>
+
+    <div class="record">
+        <div class="record__body">
+            <div class="record__inner">
+                <h2 class="record__title title">Записаться</h2>
+                <form method="post" class="record__form" action="#">
+                    <input value="" type="text" class="record__input record__input--name" placeholder="Ваше имя">
+                    <input value="" type="number" class="record__input record__input--num" placeholder="Ваш номер">
+                    <input value="" type="text" class="record__input record__input--text" placeholder="Ваш комментарий">
+                    <div class="form__buttons">
+                        <a href="tel:+3752965959" class="record__btn btn">Позвонить</a>
+                        <button type="submit" class="record__btn btn">Записаться</button>
+                    </div>
+                </form>
+                <p class="record__text text">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header-left">
+          <a href="./index.html" class="header-logo js-anim">
+            <svg class="logo-svg" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.03516 4.69434H7.03649L12.8919 15.7605L18.1542 4.69434H20.155V17.6917H18.1542V5.90137L12.5397 17.6917H11.7797L5.57559 5.97551L5.5383 5.92035V17.6917H5.03812L5.03516 4.69434Z"/>
+              <path d="M31.1523 35.7993C31.1523 31.9007 34.154 29.1343 38.3787 29.1343C40.8056 29.1343 42.8815 30.2666 43.4747 31.5104L42.418 31.8817C41.7142 30.2666 40.2687 29.524 38.564 29.524C35.5996 29.524 33.246 32.2524 33.246 35.7626C33.246 39.3273 35.5623 42.0569 38.5456 42.0569C39.9165 42.0569 41.2508 41.5368 41.8995 40.7384V36.8937H43.9003V38.1938C43.9003 40.7004 41.584 42.4644 38.3603 42.4644C34.1357 42.465 31.1523 39.717 31.1523 35.7993Z"/>
+              <path d="M25.3765 0.476074H24.6875V49.6198H25.3765V0.476074Z"/>
+              <path d="M49.5559 24.7026H0.511719V25.393H49.5559V24.7026Z"/>
+              <path d="M30.8549 14.9435C30.6182 14.3183 30.8946 13.52 31.5653 13.0276C32.1075 12.6308 32.7627 12.5395 33.27 12.7388C33.5417 12.8404 33.8344 12.873 34.1217 12.8336C34.4091 12.7943 34.6822 12.6843 34.9168 12.5134C35.0876 12.393 35.2522 12.2639 35.4099 12.1267C35.8728 11.6628 36.5517 11.0454 37.3272 10.3668C37.6006 8.09513 38.1742 3.51256 38.4418 2.71004C38.4418 2.71004 38.5714 2.18927 38.7969 2.41348C38.7969 2.41348 38.7537 5.98178 38.6193 9.25115C41.1108 7.13187 43.8929 4.89931 43.8929 4.89931C44.2078 4.94083 43.8781 5.36374 43.8781 5.36374C43.4116 6.06957 40.1584 9.34605 38.5394 10.9612C38.4802 11.9908 38.4163 12.9061 38.3358 13.5567C38.3358 13.5567 38.3186 13.8331 38.3358 14.1837C38.3461 14.4738 38.428 14.7569 38.5742 15.0076C38.7204 15.2583 38.9262 15.4688 39.1734 15.6202C39.6428 15.8972 39.9755 16.4702 39.9968 17.1416C40.0276 18.1073 39.4048 18.911 38.6057 18.9371C37.8066 18.9632 37.1336 18.2022 37.1028 17.2371C37.0834 16.8045 37.2083 16.3777 37.458 16.0242C37.7406 15.65 37.8723 15.1828 37.8267 14.7157C37.7297 13.8527 37.5568 12.6148 37.3076 11.9416C36.6245 12.1605 35.5437 12.7868 34.8049 13.2424C34.409 13.4938 34.1224 13.8857 34.0023 14.3397C33.8784 14.7547 33.6201 15.1165 33.2683 15.3682C32.5378 15.902 31.6002 15.883 31.0976 15.345C31.0066 15.2176 30.9255 15.0833 30.8549 14.9435ZM37.5367 17.2217C37.5586 17.8997 38.031 18.4341 38.5921 18.4157C39.1533 18.3973 39.5907 17.8326 39.5694 17.1547C39.5481 16.4767 39.0751 15.9423 38.514 15.9607C37.9528 15.9791 37.5154 16.5438 37.5367 17.2217ZM37.6669 11.2625C37.7597 11.3079 37.8639 11.3247 37.9662 11.3107C38.0686 11.2968 38.1645 11.2528 38.2418 11.1842C38.3192 11.1156 38.3745 11.0256 38.4008 10.9256C38.4271 10.8255 38.4232 10.7199 38.3896 10.622C38.3559 10.5242 38.2941 10.4385 38.2119 10.3759C38.1297 10.3133 38.0308 10.2765 37.9277 10.2702C37.8246 10.2639 37.722 10.2883 37.6328 10.3405C37.5436 10.3927 37.4718 10.4701 37.4266 10.5632C37.366 10.6878 37.3572 10.8315 37.4023 10.9627C37.4474 11.0938 37.5425 11.2016 37.6669 11.2625ZM31.4291 14.9227C31.7606 15.3765 32.4721 15.4192 33.019 15.0188C33.566 14.6184 33.7406 13.9257 33.4091 13.4719C33.0777 13.0182 32.3661 12.9755 31.8192 13.3758C31.2722 13.7762 31.0976 14.4696 31.4291 14.9227Z" fill="white"/>
+              <path d="M12.9828 35.7621C14.4277 35.2621 15.2599 36.4798 17.0079 37.2165C19.574 38.2966 19.79 39.9864 18.7506 40.7451C17.7111 41.5037 16.2283 40.5618 14.9764 41.06L14.9646 41.0648L14.9527 41.0689C13.6824 41.5179 13.184 43.2042 11.9013 43.3169C10.6186 43.4296 9.67504 42.012 10.9003 39.5102C11.7367 37.8031 11.5657 36.3369 12.9828 35.7621Z" fill="white"/>
+              <path d="M16.0379 33.4021C15.6543 34.79 16.0669 36.1157 16.9595 36.3636C17.8522 36.6115 18.8869 35.6874 19.2681 34.2995C19.6493 32.9116 19.2391 31.5865 18.3464 31.3386C17.4538 31.0906 16.4215 32.0147 16.0379 33.4021Z"/>
+              <path d="M9.13158 35.9957C10.3308 36.7888 10.8896 38.0598 10.3794 38.8345C9.86913 39.6091 8.48519 39.5943 7.28415 38.8007C6.08312 38.0071 5.5267 36.7372 6.03695 35.9625C6.54719 35.1879 7.93291 35.2027 9.13158 35.9957Z"/>
+              <path d="M11.9295 31.8167C12.2041 33.3102 13.2057 34.3767 14.1664 34.1994C15.1271 34.022 15.6829 32.6673 15.4095 31.1744C15.136 29.6814 14.1332 28.6144 13.1725 28.7917C12.2118 28.9691 11.6548 30.3238 11.9295 31.8167Z"/>
+              <path d="M11.1882 32.0952C11.9577 33.4001 11.9051 34.8646 11.0645 35.3634C10.224 35.8622 8.91698 35.208 8.1445 33.9019C7.37203 32.5958 7.42767 31.132 8.26822 30.6331C9.10877 30.1343 10.4158 30.7885 11.1882 32.0952Z"/>
+            </svg>            
+          </a>
+        </div>
+        <nav class="header-middle">
+          <ul class="list-reset header-list">
+            <li class="header-list-item">
+              <a href="./index.html#hero" class="header-list__item js-anim">О&nbsp;салоне</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./services.html" class="header-list__item js-anim">Услуги</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#work" class="header-list__item js-anim">Наши работы</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#work" class="header-list__item js-anim">Отзывы</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#articles" class="header-list__item js-anim">Статьи</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index.html#address" class="header-list__item js-anim">Адреса</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-right">
+          <ul class="list-reset header-social">
+            <li class="header-social-item ">
+              <span class="header-social-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 6V12L16 14" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                
+              </span>
+              <p class="header-social-item__text">
+                10:00&nbsp;&mdash; 20:00 <br>
+                (без выходных)
+              </p>
+            </li>
+            <li class="header-social-item ">
+              <span class="header-social-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                
+              </span>
+              <p class="header-social-item__text">
+                м. Некрасовка
+                пр. <br>
+                Защитников Москвы, 9к1
+              </p>
+            </li>
+            <li class="header-social-item ">
+              <span class="header-social-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.9994 16.92V19.92C22.0006 20.1985 21.9435 20.4742 21.832 20.7293C21.7204 20.9845 21.5567 21.2136 21.3515 21.4019C21.1463 21.5901 20.904 21.7335 20.6402 21.8227C20.3764 21.9119 20.0968 21.9451 19.8194 21.92C16.7423 21.5856 13.7864 20.5341 11.1894 18.85C8.77327 17.3147 6.72478 15.2662 5.18945 12.85C3.49942 10.2412 2.44769 7.27099 2.11944 4.18C2.09446 3.90346 2.12732 3.62476 2.21595 3.36162C2.30457 3.09849 2.44702 2.85669 2.63421 2.65162C2.82141 2.44655 3.04925 2.28271 3.30324 2.17052C3.55722 2.05833 3.83179 2.00026 4.10945 2H7.10945C7.59475 1.99522 8.06524 2.16708 8.43321 2.48353C8.80118 2.79998 9.04152 3.23944 9.10944 3.72C9.23607 4.68006 9.47089 5.62272 9.80945 6.53C9.94399 6.88792 9.97311 7.27691 9.89335 7.65088C9.8136 8.02484 9.62831 8.36811 9.35944 8.64L8.08945 9.91C9.513 12.4135 11.5859 14.4864 14.0894 15.91L15.3594 14.64C15.6313 14.3711 15.9746 14.1858 16.3486 14.1061C16.7225 14.0263 17.1115 14.0555 17.4694 14.19C18.3767 14.5285 19.3194 14.7634 20.2794 14.89C20.7652 14.9585 21.2088 15.2032 21.526 15.5775C21.8431 15.9518 22.0116 16.4296 21.9994 16.92Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                
+              </span>
+              <div class="header-social-item-phones">
+                <a href="tel:+79254450425" class="header-social-item__text">
+                  +7&nbsp;925 445-04-25
+                </a>
+                <a href="tel:+79254450425" class="header-social-item__text">+7&nbsp;925 445-04-25
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="header-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-nav--adaptive">
+          <div class="header-nav-adaptive__body">
+            <nav class="header-middle--adaptive">
+              <ul class="list-reset header-list--adaptive">
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./index.html#hero" class="header-list__item header-list__item--adaptive js-anim">О&nbsp;салоне</a>
+                </li>
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./services.html" class="header-list__item header-list__item--adaptive js-anim">Услуги</a>
+                </li>
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./index.html#work" class="header-list__item header-list__item--adaptive js-anim">Наши работы</a>
+                </li>
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./index.html#work" class="header-list__item header-list__item--adaptive js-anim">Отзывы</a>
+                </li>
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./index.html#articles" class="header-list__item header-list__item--adaptive js-anim">Статьи</a>
+                </li>
+                <li class="header-list-item header-list-item--adaptive">
+                  <a href="./index.html#address" class="header-list__item header-list__item--adaptive js-anim">Адреса</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-right--adaptive">
+              <ul class="list-reset header-social header-social--adaptive">
+                <li class="header-social-item ">
+                  <span class="header-social-item__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 6V12L16 14" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                
+                  </span>
+                  <p class="header-social-item__text">
+                    10:00&nbsp;&mdash; 20:00 <br>
+                    (без выходных)
+                  </p>
+                </li>
+                <li class="header-social-item">
+                  <span class="header-social-item__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                
+                  </span>
+                  <p class="header-social-item__text">
+                    м. Некрасовка
+                    пр. <br>
+                    Защитников Москвы, 9к1
+                  </p>
+                </li>
+                <li class="header-social-item">
+                  <span class="header-social-item__icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.9994 16.92V19.92C22.0006 20.1985 21.9435 20.4742 21.832 20.7293C21.7204 20.9845 21.5567 21.2136 21.3515 21.4019C21.1463 21.5901 20.904 21.7335 20.6402 21.8227C20.3764 21.9119 20.0968 21.9451 19.8194 21.92C16.7423 21.5856 13.7864 20.5341 11.1894 18.85C8.77327 17.3147 6.72478 15.2662 5.18945 12.85C3.49942 10.2412 2.44769 7.27099 2.11944 4.18C2.09446 3.90346 2.12732 3.62476 2.21595 3.36162C2.30457 3.09849 2.44702 2.85669 2.63421 2.65162C2.82141 2.44655 3.04925 2.28271 3.30324 2.17052C3.55722 2.05833 3.83179 2.00026 4.10945 2H7.10945C7.59475 1.99522 8.06524 2.16708 8.43321 2.48353C8.80118 2.79998 9.04152 3.23944 9.10944 3.72C9.23607 4.68006 9.47089 5.62272 9.80945 6.53C9.94399 6.88792 9.97311 7.27691 9.89335 7.65088C9.8136 8.02484 9.62831 8.36811 9.35944 8.64L8.08945 9.91C9.513 12.4135 11.5859 14.4864 14.0894 15.91L15.3594 14.64C15.6313 14.3711 15.9746 14.1858 16.3486 14.1061C16.7225 14.0263 17.1115 14.0555 17.4694 14.19C18.3767 14.5285 19.3194 14.7634 20.2794 14.89C20.7652 14.9585 21.2088 15.2032 21.526 15.5775C21.8431 15.9518 22.0116 16.4296 21.9994 16.92Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                
+                  </span>
+                  <div class="header-social-item-phones">
+                    <a href="tel:+79254450425" class="header-social-item__text">
+                      +7&nbsp;925 445-04-25
+                    </a>
+                    <a href="tel:+79254450425" class="header-social-item__text">+7&nbsp;925 445-04-25
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="services-hero">
+            <div class="container services-container-hero">
+                <div class="services-page-wrap">
+                    <h2 class="services__title title">Стрижка кошек</h2>
+                    <p class="services__text text">Стрижка кошек&nbsp;&mdash; обязательное условие грамотного ухода
+                        за&nbsp;шерстью домашнего любимца. У&nbsp;длинношерстных особей достаточно часто образовываются
+                        колтуны. Их&nbsp;удаление нужно проводить своевременно. </p>
+                    <div class="services-btn-group">
+                        <p class="services-btn-1">от&nbsp;2000&nbsp;р.</p>
+                        <button class="services-btn-2 btn">Записаться</button>
+                    </div>
+                </div>
+                <div class="services-hero-right"></div>
+            </div>
+        </section>
+        <section class="services-questions">
+            <div class="container">
+                <h2 class="services-questions__title title">
+                    Часто задаваемые вопросы
+                </h2>
+                <ul class="services-questions-list list-reset">
+                    <li class="services-auestions-item">
+                        <h3 class="services-questions-item__title">Зачем подстригать кошку?</h3>
+                        <p class="services-questions-item__text text">Если кошка имеет пышную меховую шубку, она
+                            не&nbsp;всегда может справиться с&nbsp;уходом за&nbsp;ней. Причиной может быть, как излишняя
+                            густота меха, присущая некоторым декоративным длинношёрстным породам, так и&nbsp;возраст
+                            животного. Последствия&nbsp;же недостаточного ухода будут: образование колтунов, сваливание
+                            шерсти и&nbsp;развитие нежелательной, вредоносной флоры в&nbsp;этой среде. Не&nbsp;стоит
+                            забывать и&nbsp;о&nbsp;том, что под свалявшейся шерстью кожа животного начинает плохо
+                            дышать, что может привести к&nbsp;заболеваниям.
+
+                            Стоит упомянуть и&nbsp;чисто бытовые ситуации, вынуждающие хозяев стричь кошку:
+                            в&nbsp;период интенсивной линьки шерсть животного можно обнаружить в&nbsp;доме повсюду,
+                            а&nbsp;вычёсывать питомца бывает очень нелегко.</p>
+                    </li>
+                    <li class="services-auestions-item">
+                        <h3 class="services-questions-item__title">Какие нюансы есть у&nbsp;стрижки кошек?</h3>
+                        <p class="services-questions-item__text text">
+                            По&nbsp;своей природе кошки менее дисциплинированны, чем собаки. И&nbsp;если одни переносят
+                            стрижку спокойно, то&nbsp;другие относятся к&nbsp;процессу облагораживания их&nbsp;облика
+                            достаточно негативно. Процент &laquo;буйных&raquo; среди кошек гораздо выше, чем среди
+                            собак, в&nbsp;связи с&nbsp;этим, грумеру нужно разбираться в&nbsp;вопросах зоопсихологии.
+                            Естественно, у&nbsp;квалифицированного специалиста даже самая буйная кошка будет вести себя
+                            спокойно.
+                        </p>
+                    </li>
+                    <li class="services-auestions-item">
+                        <h3 class="services-questions-item__title">Насколько часто стоит подстригать животное?</h3>
+                        <p class="services-questions-item__text text">Стрижку домашнего любимца стоит производить
+                            по&nbsp;мере возникновения проблемы или увеличения длины шерсти. Обычно это происходит
+                            не&nbsp;реже, чем один раз в&nbsp;4-5&nbsp;месяцев.</p>
+                    </li>
+                    <li class="services-auestions-item">
+                        <h3 class="services-questions-item__title">Как будет проходить?</h3>
+                        <p class="services-questions-item__text text">Все услуги для кошек в&nbsp;зоосалоне МонГрум
+                            оказываются без наркоза и&nbsp;других медикаментозных средств.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="services services-page-serv">
+            <div class="container services-container">
+                <div class="services-up">
+                    <h2 class="services__title title">Услуги</h2>
+                    <a href="./img/price-full.jpeg" download class="services__btn">Открыть полный прайс</a>
+                </div>
+            </div>
+            <div class="swiper services-page-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services1.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services2.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services3.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services4.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services5.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                    <div class="swiper-slide services-swiper-slide">
+                        <img src="img/services6.jpg" alt="" class="services-swiper__img">
+                        <h3 class="services-swiper__title">Стрижка кошек</h3>
+                        <p class="services-swiper__text text">Обязательное условие грамотного ухода за&nbsp;шерстью
+                            домашнего
+                            любимца.
+                        </p>
+                        <button class="services-swiper__btn btn">Записаться &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer price-footer">
+        <div class="container">
+          <div class="footer-up price-footer-up">
+            <a href="./index.html" class="footer-logo">
+              <img src="img/logo-white.svg" alt="logo">
+            </a>
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="./index.html#choice" class="footer-nav__link price-footer-nav-list">О&nbsp;салоне</a></li>
+              <li class="footer-nav-item"><a href="./services.html" class="footer-nav__link price-footer-nav-list">Услуги</a></li>
+              <li class="footer-nav-item"><a href="./index.html#work" class="footer-nav__link price-footer-nav-list">Наши работы</a></li>
+              <li class="footer-nav-item"><a href="./index.html#work" class="footer-nav__link price-footer-nav-list">Отзывы</a></li>
+              <li class="footer-nav-item"><a href="./index.html#articles" class="footer-nav__link price-footer-nav-list">Статьи</a></li>
+              <li class="footer-nav-item"><a href="./index.html#address" class="footer-nav__link price-footer-nav-list">Адреса</a></li>
+              <li class="footer-nav-item"><a href="#" class="footer-nav__link price-footer-nav-list">Скидочные карты</a>
+              </li>
+              <li class="footer-nav-item"><a href="#" class="footer-nav__link price-footer-nav-list">Курсы груминга</a></li>
+              <li class="footer-nav-item"><a href="#" class="footer-nav__link price-footer-nav-list">Вакансии</a></li>
+            </ul>
+            <ul class="footer-social-list">
+              <li class="footer-social-item"><a href="#" class="footer-social__link"><svg width="30" height="30"
+                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23.0037 7.04129C21.9642 5.99489 20.7273 5.16518 19.3648 4.60022C18.0023 4.03526 16.5412 3.74629 15.0663 3.75004C8.88125 3.75004 3.84625 8.78379 3.84375 14.9713C3.84375 16.9488 4.36 18.8788 5.34125 20.5813L3.75 26.395L9.69875 24.8338C11.3442 25.7295 13.1877 26.1992 15.0612 26.2H15.0663C21.25 26.2 26.285 21.1663 26.2875 14.9788C26.2917 13.5044 26.0037 12.0438 25.4401 10.6814C24.8765 9.31895 24.0484 8.08175 23.0037 7.04129ZM15.0663 24.3063H15.0625C13.3919 24.3065 11.752 23.857 10.315 23.005L9.975 22.8025L6.445 23.7288L7.38625 20.2875L7.165 19.935C6.23098 18.4481 5.73654 16.7273 5.73875 14.9713C5.74125 9.82879 9.925 5.64504 15.07 5.64504C16.2953 5.64231 17.509 5.88264 18.6408 6.3521C19.7726 6.82156 20.8001 7.51084 21.6637 8.38004C22.532 9.24509 23.2202 10.2737 23.6886 11.4063C24.157 12.5389 24.3962 13.7531 24.3925 14.9788C24.39 20.1213 20.2063 24.3063 15.0663 24.3063ZM20.1825 17.32C19.9013 17.1788 18.5238 16.5013 18.2662 16.4075C18.01 16.3138 17.8238 16.2675 17.6363 16.5475C17.4488 16.8275 16.9113 17.4588 16.7475 17.6463C16.5837 17.8338 16.42 17.8563 16.14 17.7163C15.86 17.5763 14.9563 17.28 13.885 16.325C13.0512 15.5813 12.4887 14.6638 12.325 14.3825C12.1612 14.1013 12.3075 13.95 12.4487 13.81C12.575 13.685 12.7288 13.4825 12.8687 13.3188C13.0087 13.155 13.055 13.0388 13.1488 12.8513C13.2425 12.6638 13.1962 12.5 13.125 12.36C13.055 12.2188 12.4937 10.8388 12.26 10.2775C12.0337 9.73379 11.8025 9.80629 11.63 9.79879C11.4513 9.79148 11.2726 9.78814 11.0938 9.78879C10.9516 9.79241 10.8117 9.82537 10.6828 9.8856C10.554 9.94582 10.439 10.032 10.345 10.1388C10.0875 10.42 9.36375 11.0975 9.36375 12.4775C9.36375 13.8575 10.3687 15.1913 10.5087 15.3788C10.6487 15.5663 12.4862 18.3975 15.2987 19.6125C15.9688 19.9013 16.4913 20.0738 16.8975 20.2038C17.5687 20.4175 18.18 20.3863 18.6637 20.315C19.2025 20.235 20.3225 19.6375 20.5562 18.9825C20.79 18.3275 20.79 17.7663 20.72 17.6488C20.65 17.5313 20.4613 17.46 20.1825 17.32Z"
+                      fill="#ffffff" />
+                  </svg>
+                </a></li>
+              <li class="footer-social-item"><a href="#" class="footer-social__link">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.9987 9.22119C13.4658 9.22119 11.9956 9.83015 10.9117 10.9141C9.82771 11.9981 9.21875 13.4682 9.21875 15.0012C9.21875 16.5341 9.82771 18.0043 10.9117 19.0883C11.9956 20.1722 13.4658 20.7812 14.9987 20.7812C16.5317 20.7812 18.0019 20.1722 19.0858 19.0883C20.1698 18.0043 20.7787 16.5341 20.7787 15.0012C20.7787 13.4682 20.1698 11.9981 19.0858 10.9141C18.0019 9.83015 16.5317 9.22119 14.9987 9.22119ZM14.9987 18.7549C14.0029 18.7549 13.0478 18.3593 12.3436 17.6551C11.6394 16.9509 11.2437 15.9958 11.2437 14.9999C11.2437 14.0041 11.6394 13.049 12.3436 12.3448C13.0478 11.6406 14.0029 11.2449 14.9987 11.2449C15.9946 11.2449 16.9497 11.6406 17.6539 12.3448C18.3581 13.049 18.7537 14.0041 18.7537 14.9999C18.7537 15.9958 18.3581 16.9509 17.6539 17.6551C16.9497 18.3593 15.9946 18.7549 14.9987 18.7549Z"
+                      fill="#ffffff" />
+                    <path
+                      d="M21.0077 10.3561C21.7519 10.3561 22.3552 9.75284 22.3552 9.00863C22.3552 8.26443 21.7519 7.66113 21.0077 7.66113C20.2635 7.66113 19.6602 8.26443 19.6602 9.00863C19.6602 9.75284 20.2635 10.3561 21.0077 10.3561Z"
+                      fill="#ffffff" />
+                    <path
+                      d="M25.6657 7.63885C25.3763 6.89157 24.9341 6.21295 24.3674 5.64642C23.8006 5.07989 23.1218 4.63794 22.3745 4.34885C21.4999 4.02054 20.5759 3.84302 19.642 3.82385C18.4382 3.77135 18.057 3.75635 15.0045 3.75635C11.952 3.75635 11.5607 3.75635 10.367 3.82385C9.43369 3.84204 8.5104 4.0196 7.63695 4.34885C6.88937 4.6376 6.21041 5.07944 5.64362 5.64601C5.07683 6.21258 4.63474 6.89138 4.3457 7.63885C4.01733 8.51336 3.84022 9.43739 3.82195 10.3713C3.7682 11.5738 3.75195 11.9551 3.75195 15.0088C3.75195 18.0613 3.75195 18.4501 3.82195 19.6463C3.8407 20.5813 4.01695 21.5038 4.3457 22.3801C4.63555 23.1273 5.07807 23.8058 5.645 24.3723C6.21192 24.9388 6.89078 25.3808 7.6382 25.6701C8.50999 26.0116 9.43367 26.2018 10.3695 26.2326C11.5732 26.2851 11.9545 26.3013 15.007 26.3013C18.0595 26.3013 18.4507 26.3013 19.6445 26.2326C20.5783 26.2136 21.5022 26.0365 22.377 25.7088C23.1241 25.4191 23.8027 24.9767 24.3694 24.4101C24.9361 23.8434 25.3784 23.1648 25.6682 22.4176C25.997 21.5426 26.1732 20.6201 26.192 19.6851C26.2457 18.4826 26.262 18.1013 26.262 15.0476C26.262 11.9938 26.262 11.6063 26.192 10.4101C26.1774 9.46294 25.9994 8.52541 25.6657 7.63885ZM24.1432 19.5538C24.1351 20.2742 24.0037 20.9879 23.7545 21.6638C23.5667 22.1499 23.2794 22.5913 22.9108 22.9597C22.5422 23.328 22.1006 23.6152 21.6145 23.8026C20.946 24.0507 20.2399 24.1821 19.527 24.1913C18.3395 24.2463 18.0045 24.2601 14.9595 24.2601C11.912 24.2601 11.6007 24.2601 10.3907 24.1913C9.67811 24.1826 8.97236 24.0511 8.30445 23.8026C7.81656 23.6163 7.37321 23.3297 7.00307 22.9613C6.63293 22.5929 6.34425 22.1509 6.1557 21.6638C5.91001 20.9952 5.77859 20.2899 5.76695 19.5776C5.7132 18.3901 5.7007 18.0551 5.7007 15.0101C5.7007 11.9638 5.7007 11.6526 5.76695 10.4413C5.77503 9.72138 5.90652 9.00812 6.1557 8.3326C6.53695 7.34635 7.3182 6.5701 8.30445 6.1926C8.97269 5.94527 9.67823 5.8138 10.3907 5.80385C11.5795 5.7501 11.9132 5.7351 14.9595 5.7351C18.0057 5.7351 18.3182 5.7351 19.527 5.80385C20.24 5.81243 20.9462 5.94394 21.6145 6.1926C22.1006 6.38044 22.5421 6.66785 22.9107 7.03639C23.2792 7.40492 23.5666 7.84644 23.7545 8.3326C24.0001 9.00128 24.1316 9.70655 24.1432 10.4188C24.197 11.6076 24.2107 11.9413 24.2107 14.9876C24.2107 18.0326 24.2107 18.3601 24.157 19.5551H24.1432V19.5538Z"
+                      fill="#ffffff" />
+                  </svg>
+    
+                </a></li>
+            </ul>
+          </div>
+          <div class="footer-down .price-footer-nav-list">
+            <p class="price-footer-nav-list">Copyright &copy;&nbsp;2012-2022&nbsp;MON GROOM&nbsp;&mdash; салон
+              &amp;&nbsp;бутик для собак и&nbsp;кошек</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+
+</html>
